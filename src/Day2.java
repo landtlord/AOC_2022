@@ -1,17 +1,15 @@
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class DayTwo {
+public class Day2 {
     public static void main(String[] args) {
         List<String> input = Inputreader.readInput("day2.txt");
 
         List<Integer> resultsPerPlay = input.stream()
-                .map(DayTwo::calculate)
+                .map(Day2::calculate)
                 .toList();
 
         List<Integer> resultsPerPlay2 = input.stream()
-                .map(DayTwo::calculate2)
+                .map(Day2::calculate2)
                 .toList();
 
         int solutionOne = resultsPerPlay.stream().mapToInt(x -> x).sum();

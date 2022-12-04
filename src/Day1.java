@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class DayOne {
+public class Day1 {
     public static void main(String[] args) {
         List<String> input =Inputreader.readInput("day1.txt");
 

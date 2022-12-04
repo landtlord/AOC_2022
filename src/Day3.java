@@ -1,17 +1,15 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class DayThree {
+public class Day3 {
     public static void main(String[] args) {
         List<String> input = Inputreader.readInput("day3.txt");
 
-        List<Character> priority = input.stream().map(DayThree::calculate).toList();
+        List<Character> priority = input.stream().map(Day3::calculate).toList();
         List<Character> priority2 = calculate2(input);
 
-        int solution = priority.stream().mapToInt(DayThree::intValue).sum();
-        int solution2 = priority2.stream().mapToInt(DayThree::intValue).sum();
+        int solution = priority.stream().mapToInt(Day3::intValue).sum();
+        int solution2 = priority2.stream().mapToInt(Day3::intValue).sum();
 
         System.out.println(solution);
         System.out.println(solution2);
